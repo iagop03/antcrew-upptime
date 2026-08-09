@@ -6,8 +6,8 @@ Status page for [antcrew](https://antcrew.org) services, powered by [Upptime](ht
 
 ## Monitored services
 
-| Service | URL |
-|---------|-----|
+| Service      | URL                                     |
+| ------------ | --------------------------------------- |
 | Platform INT | https://platform-int.antcrew.org/health |
 
 ## How it works
