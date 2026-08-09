@@ -4,16 +4,62 @@ repo: antcrew-upptime
 sites:
   - name: Platform INT
     url: https://platform-int.antcrew.org/health
-    expectedResponseTime: 10000
+    expectedResponseTime: 8000
 
 status-website:
   cname: status.antcrew.org
-  name: antcrew Status
+  name: antcrew status
   theme: dark
-  introTitle: antcrew service status
-  introMessage: Real-time status for antcrew services.
+  introTitle: All systems operational
+  introMessage: Real-time availability and response times for antcrew services. Incidents are tracked as [GitHub Issues](https://github.com/iagop03/antcrew-upptime/issues).
   navbar:
     - title: Status
       href: /
-    - title: antcrew
+    - title: Platform
       href: https://antcrew.org
+    - title: Docs
+      href: https://docs.antcrew.org
+  customCss: |
+    :root {
+      --body-background-color: #030712;
+      --card-background-color: #0f172a;
+      --nav-background-color: #0a0f1e;
+      --nav-border-bottom-color: #1e293b;
+      --nav-current-border-bottom-color: #818cf8;
+      --card-border-color: #1e293b;
+      --body-text-color: #cbd5e1;
+      --up-border-left-color: #34d399;
+      --tag-up-background-color: #34d399;
+      --down-border-left-color: #f87171;
+      --down-background-color: #3b0a0a;
+      --tag-down-background-color: #f87171;
+      --degraded-border-left-color: #fbbf24;
+      --tag-degraded-background-color: #fbbf24;
+      --error-button-background-color: #818cf8;
+      --error-button-border-color: #6366f1;
+      --submit-button-background-color: #818cf8;
+      --submit-button-border-color: #6366f1;
+      --graph-opacity: 0.9;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    }
+    .container h1 {
+      font-weight: 600;
+      font-size: 1.6rem;
+      letter-spacing: -0.02em;
+      color: #f1f5f9;
+    }
+    .container p {
+      color: #94a3b8;
+      font-size: 0.95rem;
+    }
+    article {
+      border-radius: 0.5rem !important;
+      border: 1px solid #1e293b !important;
+    }
+    article h2 {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #e2e8f0;
+    }
