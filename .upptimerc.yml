@@ -1,0 +1,20 @@
+owner: iagop03
+repo: antcrew-upptime
+userAgent: UpptimeBot
+sites:
+  - name: antcrew INT
+    url: https://antcrew-int.fly.dev/health
+    expectedResponseTime: 5000
+  - name: antcrew PROD
+    url: https://antcrew.org/health
+    expectedResponseTime: 3000
+assignees:
+  - iagop03
+status-website:
+  cname: status.antcrew.org
+  name: antcrew Status
+  introTitle: antcrew Status
+  introMessage: Estado en tiempo real de los servicios de antcrew.
+  navbar:
+    - title: antcrew
+      href: https://antcrew.org

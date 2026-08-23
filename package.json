@@ -1,0 +1,14 @@
+{
+  "name": "antcrew-upptime",
+  "version": "1.0.0",
+  "homepage": "https://status.antcrew.org",
+  "scripts": {
+    "update": "npx --yes @upptime/uptime-monitor update",
+    "response-time": "npx --yes @upptime/uptime-monitor response-time",
+    "graphs": "npx --yes @upptime/uptime-monitor graphs",
+    "site": "npx --yes @upptime/uptime-monitor site"
+  },
+  "devDependencies": {
+    "@upptime/uptime-monitor": "^0"
+  }
+}

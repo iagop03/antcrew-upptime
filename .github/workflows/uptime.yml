@@ -1,0 +1,21 @@
+name: Uptime CI
+on:
+  push:
+    branches:
+      - master
+  repository_dispatch:
+    types: [trigger_uptime_test]
+  schedule:
+    # Check every 5 minutes
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+jobs:
+  uptime:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Upptime
+        uses: upptime/uptime-monitor@master
+        with:
+          UPPTIME_GH_TOKEN: ${{ secrets.UPPTIME_GH_TOKEN }}

@@ -1,0 +1,20 @@
+name: Generate Graphs
+on:
+  workflow_run:
+    workflows: ["Uptime CI"]
+    types:
+      - completed
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  graphs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Upptime
+        uses: upptime/uptime-monitor@master
+        with:
+          UPPTIME_GH_TOKEN: ${{ secrets.UPPTIME_GH_TOKEN }}
+          TYPE: graphs

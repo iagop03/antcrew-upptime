@@ -1,0 +1,17 @@
+name: Static Site CI
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Upptime
+        uses: upptime/uptime-monitor@master
+        with:
+          UPPTIME_GH_TOKEN: ${{ secrets.UPPTIME_GH_TOKEN }}
+          TYPE: static-site
